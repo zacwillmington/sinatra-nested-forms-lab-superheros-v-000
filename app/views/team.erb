@@ -6,9 +6,9 @@
 <h2>heros</h2>
     <% @heros.each_with_index do |hero, index| %>
         <ul>
-            <h3>Hero #<%=index%><h3>
-            <li><%= hero.name %></li>
-            <li><%= hero.power %></li>
-            <li><%= hero.bio %></li>
+            <h3>Hero #<%=index + 1%><h3>
+            <li>Hero Name: <%= hero.name %></li>
+            <li>Hero Power: <%= hero.power %></li>
+            <li>Hero Biography: <%= hero.bio %></li>
         </ul>
     <%end%>
