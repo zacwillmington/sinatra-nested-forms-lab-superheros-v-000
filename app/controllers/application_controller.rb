@@ -15,7 +15,6 @@ class App < Sinatra::Base
             Hero.new(hero[:name], hero[:power], hero[:bio])
         end
         @heros = Hero.all
-        binding.pry
         erb :team
     end
 
