@@ -1,13 +1,12 @@
-class Team 
-    
+class Team
+
     attr_accessor :name, :motto
 
         @@all = []
 
-        def initialize(name, power, bio)
+        def initialize(name, motto)
             @name = name
-            @power = power
-            @bio = bio
+            @motto = motto
         end
 
         def self.all
